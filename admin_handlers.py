@@ -11,11 +11,11 @@ from telegram.error import TelegramError
 import db
 import state
 import keyboards
-from config import 1874867210
+from config import ADMIN_IDS
 
 
 def is_admin(telegram_id):
-    return telegram_id in 1874867210
+    return telegram_id in ADMIN_IDS
 
 
 async def guard(update: Update) -> bool:
