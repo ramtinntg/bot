@@ -11,11 +11,11 @@ from telegram.error import TelegramError
 import db
 import state
 import keyboards
-from config import ADMIN_IDS
+from config import 1874867210
 
 
 def is_admin(telegram_id):
-    return telegram_id in ADMIN_IDS
+    return telegram_id in 1874867210
 
 
 async def check_force_join(update: Update, context: ContextTypes.DEFAULT_TYPE, telegram_id):
