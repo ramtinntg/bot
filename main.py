@@ -56,7 +56,7 @@ async def generic_text_handler(update: Update, context: ContextTypes.DEFAULT_TYP
 def main():
     db.init_db()
 
-    application = Application.builder().token("8705385813:AAEaiIqxVaXw9zPqJjyeZ3N2BcZf_qtKIvY").build()
+    application = Application.builder().token("BOT_TOKEN").build()
 
     # --- دستورات ---
     application.add_handler(CommandHandler("start", user_handlers.start_command))
