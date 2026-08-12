@@ -12,7 +12,7 @@ import os
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
 
-_admin_ids_raw = os.environ.get("1874867210", "").strip()
+_admin_ids_raw = os.environ.get("ADMIN_IDS", "").strip()
 ADMIN_IDS = [int(x) for x in _admin_ids_raw.split(",") if x.strip().isdigit()]
 
 DB_PATH = os.environ.get("DB_PATH", "shop.db").strip()
