@@ -10,9 +10,9 @@ DB_PATH     -> مسیر فایل دیتابیس (اختیاری - پیش‌فر�
 
 import os
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
+BOT_TOKEN = os.environ.get("8990428572:AAHQf1s-N72m_SnEjZB0cQMdu8FqXgFSrX0", "").strip()
 
-_admin_ids_raw = os.environ.get("ADMIN_IDS", "").strip()
+_admin_ids_raw = os.environ.get("1874867210", "").strip()
 ADMIN_IDS = [int(x) for x in _admin_ids_raw.split(",") if x.strip().isdigit()]
 
 DB_PATH = os.environ.get("DB_PATH", "shop.db").strip()
